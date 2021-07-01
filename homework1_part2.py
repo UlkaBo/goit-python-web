@@ -1,5 +1,3 @@
-#from examples.example7 import class_decorator
-
 
 class Meta(type):
 
