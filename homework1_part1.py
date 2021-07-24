@@ -82,6 +82,7 @@ class SerializationBinTuple(SerializationInterface):
         return pickle.loads(packed_data)
 
 data_list = [1, '2', math.pi, (1,2,3), False]
+data_list = [1,2,3,"4",{100:"100"},(1,2,3)]
 data_dict_bin = {1: 2, '2': '3', (1,2,3): True, '3': math.pi, '4': [1,2,3], '5': set('bin'), '6' :tuple('set'), '7': {1:2, 3:4}}
 data_dict_json = {'1': 2, '2': '3', '0': True, '3': math.pi, '4': [1,2,3], '5': 'json', '6' :'json', '7': 0}
 data_set = {'r', (3,4,5), 2, math.pi}

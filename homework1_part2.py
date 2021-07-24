@@ -4,7 +4,7 @@ class Meta(type):
     def __new__(cls, future_class_name, future_class_parents, future_class_atrrs):
         future_class_atrrs['class_number'] = Meta.children_number
         Meta.children_number += 1
-        return type(future_class_name, future_class_parents, future_class_atrrs)
+        return super().__new__(cls, future_class_name, future_class_parents, future_class_atrrs)
 
 
 Meta.children_number = 0
